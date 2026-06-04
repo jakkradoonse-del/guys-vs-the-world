@@ -240,6 +240,26 @@ footer{border-top:1px solid var(--border2);padding:28px 20px;text-align:center;b
   .fl{margin-bottom:0}
 }
 @media(max-width:899px){.nav-links{display:none}.hamburger{display:flex}}
+
+/* SONG CARDS */
+.song-card{background:var(--r3);border:1px solid var(--border2);overflow:hidden;transition:border-color .3s,box-shadow .3s;margin-bottom:0}
+.song-card:hover{border-color:var(--red);box-shadow:0 0 20px rgba(232,35,42,.18)}
+.song-header{display:flex;align-items:center;gap:16px;padding:18px 18px 16px}
+.song-num{font-family:var(--mono);font-size:28px;font-weight:700;color:var(--red2);flex-shrink:0;line-height:1;opacity:.7}
+.song-meta{flex:1;min-width:0}
+.song-title{font-family:var(--sans);font-size:16px;font-weight:700;color:var(--white);line-height:1.3;margin-bottom:6px}
+.song-mood{display:inline-block;font-family:var(--mono);font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:var(--red3);border:1px solid rgba(232,35,42,.35);padding:3px 9px;margin-bottom:6px}
+.song-desc{font-size:12px;color:var(--muted);line-height:1.6}
+.yt-link{font-family:var(--mono);font-size:9px;color:var(--blue3);border:1px solid var(--blue);padding:7px 12px;white-space:nowrap;flex-shrink:0;transition:all .2s}
+.yt-link:hover{background:var(--blue);color:#fff}
+.song-embed{position:relative;background:#000;border-top:1px solid var(--border2)}
+.song-embed iframe{display:block;width:100%;height:215px}
+.local-notice{padding:20px;text-align:center}
+.notice-inner p{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+.btn-open{display:inline-block;background:var(--red);color:#fff;font-family:var(--mono);font-size:10px;letter-spacing:.08em;padding:9px 18px;margin:0 5px 6px;transition:all .2s}
+.btn-open:hover{background:var(--red2)}
+.btn-yt{display:inline-block;background:transparent;color:var(--blue3);font-family:var(--mono);font-size:10px;letter-spacing:.08em;padding:9px 18px;border:1px solid var(--blue);margin:0 5px 6px;transition:all .2s}
+.btn-yt:hover{background:var(--blue);color:#fff}
 </style>
 </head>
 <body>
@@ -356,8 +376,9 @@ footer{border-top:1px solid var(--border2);padding:28px 20px;text-align:center;b
   <div class="song-header">
     <span class="song-num">01</span>
     <div class="song-meta">
+      <div class="song-mood">บอกเลิก</div>
       <div class="song-title">พอใจเธอแล้วหรือยัง</div>
-      <div class="song-desc">เหนื่อยกับความสัมพันธ์ที่มีแต่น้ำตาและเรื่องให้เสียใจ — ถึงเวลาปิดฉากแล้ว ช่วยออกจากชีวิตฉันไปได้แล้ว ไม่เอาอีกแล้วน้ำตา</div>
+      <div class="song-desc">ถึงเวลาปิดฉาก — ออกจากชีวิตฉันไปซะที</div>
     </div>
     <a href="https://www.youtube.com/watch?v=uQcag7KeW7o" target="_blank" class="yt-link">YouTube ↗</a>
   </div>
@@ -384,8 +405,9 @@ footer{border-top:1px solid var(--border2);padding:28px 20px;text-align:center;b
   <div class="song-header">
     <span class="song-num">02</span>
     <div class="song-meta">
+      <div class="song-mood">ปล่อยวาง</div>
       <div class="song-title">ไปได้แล้วซักที</div>
-      <div class="song-desc">ผ่านมานานแต่บาดแผลที่เธอทิ้งไว้ยังคงทรมาน — อยู่ต่อก็เสียเวลา ไม่จำเป็นต้องมีเธอ โบกมือลาได้แล้วซักที</div>
+      <div class="song-desc">บาดแผลเก่า — ที่ถึงเวลาต้องโบกมือลา</div>
     </div>
     <a href="https://www.youtube.com/watch?v=2QOWkSDt7Zk" target="_blank" class="yt-link">YouTube ↗</a>
   </div>
@@ -412,8 +434,9 @@ footer{border-top:1px solid var(--border2);padding:28px 20px;text-align:center;b
   <div class="song-header">
     <span class="song-num">03</span>
     <div class="song-meta">
+      <div class="song-mood">อกหัก</div>
       <div class="song-title">รักที่มี เวลาที่ดี</div>
-      <div class="song-desc">รู้ดีว่ารักนี้เป็นไปไม่ได้ ฝืนมาตลอด ยอมทุกอย่างเพื่อให้เธออยู่ — แต่สุดท้ายต้องปล่อย ความรักที่มีและเวลาที่ดีไม่มีอีกแล้ว</div>
+      <div class="song-desc">รักที่รู้ว่าเป็นไปไม่ได้ — แต่ยังปล่อยไม่ลง</div>
     </div>
     <a href="https://www.youtube.com/watch?v=obfNSGkERo0" target="_blank" class="yt-link">YouTube ↗</a>
   </div>
@@ -440,8 +463,9 @@ footer{border-top:1px solid var(--border2);padding:28px 20px;text-align:center;b
   <div class="song-header">
     <span class="song-num">04</span>
     <div class="song-meta">
+      <div class="song-mood">คิดถึง</div>
       <div class="song-title">ความสวยงามได้จากไปพร้อมเธอ</div>
-      <div class="song-desc">แม้เธอจากไปนานแล้ว แต่แววตาและอ้อมกอดนั้นยังลบไม่เลือน — ความสวยงามทั้งหมดในชีวิตได้จากไปพร้อมเธอ เก็บทุกช่วงเวลาไว้ในใจตลอดไป</div>
+      <div class="song-desc">ทุกความสวยงามในชีวิต — จากไปพร้อมเธอ</div>
     </div>
     <a href="https://www.youtube.com/watch?v=TND17370TBg" target="_blank" class="yt-link">YouTube ↗</a>
   </div>
@@ -463,6 +487,7 @@ footer{border-top:1px solid var(--border2);padding:28px 20px;text-align:center;b
       style="display:none">
     </iframe>
   </div>
+</div>
 </div></div>
   </div>
 </div>
